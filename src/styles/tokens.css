@@ -1,0 +1,92 @@
+/* Magmafy CRM · "Flow Canvas" tokens.
+   Light is the default: warm paper, deep indigo ink, coral for action, teal for "won / healthy".
+   Dark is a midnight-ink variant of the same system (same hues, lifted for contrast). */
+:root, [data-theme='light'] {
+  --bg: #f5efe4;
+  --bg-2: #efe7d8;
+  --card: #fffdf8;
+  --card-2: #f0e9db;
+  --card-hover: #ffffff;
+  --sunken: #ece4d4;
+  --line: rgba(22, 27, 46, .09);
+  --line-2: rgba(22, 27, 46, .2);
+  --ink: #161b2e;
+  --ink-2: #474d66;
+  --ink-3: #5a607a;
+  --highlight: #ff6a55;           /* coral: the action colour */
+  --highlight-ink: #161b2e;
+  --highlight-ink-2: rgba(22, 27, 46, .74);
+  --accent: #c23d2c;              /* coral for text and links (AA on paper) */
+  --accent-soft: rgba(255, 106, 85, .16);
+  --teal: #0f8a7e;
+  --active: #161b2e;
+  --active-ink: #fffdf8;
+  --good: #0a756b; --good-soft: #d3eee7;
+  --warn: #8a5600; --warn-soft: #fbe9c3;
+  --bad: #b02424;  --bad-soft: #fadad4; --bad-solid: #b02424;
+  --cnt-ink: #161b2e;
+  --info: #3a56cf; --info-soft: #e1e6fa;
+  --glass: rgba(245, 239, 228, .78);
+  --scrim: rgba(22, 27, 46, .42);
+  --shadow-1: 0 1px 2px rgba(22, 27, 46, .06), 0 6px 18px -6px rgba(22, 27, 46, .1);
+  --shadow-2: 0 2px 4px rgba(22, 27, 46, .06), 0 18px 36px -12px rgba(22, 27, 46, .22);
+  --shadow-pop: 0 24px 60px -16px rgba(22, 27, 46, .38), 0 0 0 1px var(--line);
+  --dock-bg: #161b2e; --dock-ink: #fffdf8; --dock-ink-2: #aab0c8; --dock-on: #ff6a55; --dock-on-ink: #161b2e;
+  --dot: rgba(22, 27, 46, .12);
+  --heat-0: #7d86a8; --heat-1: #6a7cea; --heat-2: #9460dc; --heat-3: #c552b8; --heat-4: #e84e87; --heat-5: #f0603f; --heat-6: #d98a0b; --heat-7: #0f9a82;
+  --hatch: rgba(22, 27, 46, .06);
+  color-scheme: light;
+}
+[data-theme='dark'] {
+  --bg: #0f1325;
+  --bg-2: #0b0e1d;
+  --card: #181d34;
+  --card-2: #232946;
+  --card-hover: #1e2440;
+  --sunken: #12162b;
+  --line: rgba(238, 232, 255, .1);
+  --line-2: rgba(238, 232, 255, .24);
+  --ink: #f5efe4;
+  --ink-2: #bcc1d6;
+  --ink-3: #9aa1bc;
+  --highlight: #ff7a66;
+  --highlight-ink: #170f14;
+  --highlight-ink-2: rgba(23, 15, 20, .74);
+  --accent: #ff9484;
+  --accent-soft: rgba(255, 122, 102, .17);
+  --teal: #3ccbb5;
+  --active: #f5efe4;
+  --active-ink: #0f1325;
+  --good: #46d1b7; --good-soft: rgba(70, 209, 183, .15);
+  --warn: #f2b84a; --warn-soft: rgba(242, 184, 74, .15);
+  --bad: #ff8a80;  --bad-soft: rgba(255, 138, 128, .15); --bad-solid: #d1403b;
+  --cnt-ink: #170f14;
+  --info: #94a4ff; --info-soft: rgba(148, 164, 255, .16);
+  --glass: rgba(15, 19, 37, .78);
+  --scrim: rgba(5, 7, 16, .66);
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 22px -8px rgba(0, 0, 0, .5);
+  --shadow-2: 0 2px 4px rgba(0, 0, 0, .35), 0 20px 40px -12px rgba(0, 0, 0, .7);
+  --shadow-pop: 0 28px 64px -12px rgba(0, 0, 0, .75), 0 0 0 1px var(--line);
+  --dock-bg: #232946; --dock-ink: #f5efe4; --dock-ink-2: #aab0c8; --dock-on: #ff7a66; --dock-on-ink: #170f14;
+  --dot: rgba(238, 232, 255, .09);
+  --heat-0: #8f98bb; --heat-1: #8493ff; --heat-2: #b184f0; --heat-3: #dd6fcf; --heat-4: #ff6f9d; --heat-5: #ff7e5c; --heat-6: #f2a63a; --heat-7: #3ccbb5;
+  --hatch: rgba(238, 232, 255, .06);
+  color-scheme: dark;
+}
+:root {
+  /* legacy names kept so older screens keep working */
+  --m-y: #ffc94d; --m-o: #f0603f; --m-p: #e84e87; --m-v: #9460dc; --m-b: #3a56cf;
+  --grad: linear-gradient(100deg, #ffc94d 0%, #ff6a55 45%, #e84e87 78%, #9460dc 105%);
+  --grad-btn: linear-gradient(110deg, #ff6a55, #ff8a5c);
+  --grad-soft: linear-gradient(135deg, rgba(255, 201, 77, .3), rgba(255, 106, 85, .24) 60%, rgba(148, 96, 220, .2));
+  --dot-1: #e84e87; --dot-2: #f0603f; --dot-3: #ffc94d; --dot-4: #7ac957; --dot-5: #0f9a82;
+  --f-display: 'Space Grotesk', 'Tajawal', system-ui, sans-serif;
+  --f-display-ar: 'Tajawal', system-ui, sans-serif;
+  --f-body: 'Inter', 'Tajawal', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+  --f-num: 'Space Grotesk', 'Inter', sans-serif;
+  --r-card: 24px; --r-l: 20px; --r-m: 16px; --r-s: 12px; --r-xs: 8px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+  --t-fast: 140ms; --t-med: 240ms; --t-slow: 400ms;
+  --header-h: 68px; --dock-h: 64px;
+}
